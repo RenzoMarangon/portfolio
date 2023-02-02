@@ -1,0 +1,78 @@
+.block-wave-container{
+
+    height: 30vh;
+    background-color:$grey;
+    margin-top: -3vh;
+}
+
+@media screen and (max-width:1450px) {
+    .block-wave-container{
+
+        height: 40vh;
+        margin-top: -4rem;
+    }
+    
+    .wave-second-wave{
+        margin-top: -30vh !important;
+    }
+    .wave-third-wave{
+        margin-bottom: 5vh;
+    }
+    .wave-first-wave{
+        margin-bottom: -5vh !important;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .block-wave-container{
+
+        height: 40vh;
+        margin-top: -1.8rem !important;
+    }
+    
+
+}
+
+
+@media screen and (max-width:1200px) {
+    .block-wave-container{
+
+        height: 40vh;
+        margin-top: -4.5rem;
+    }
+    
+
+}
+
+
+
+
+.techband-container__waves{
+
+    height: 0;
+    width: 100%;
+    z-index: 10;
+    top: 30vh;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.wave-second-wave{
+    margin-top: -30vh;
+    opacity: .5;
+    z-index: 20;
+}
+
+.wave-first-wave{
+    margin-top: 20vh;
+    margin-bottom: -15vh;
+    z-index: 10;
+}
+
+.wave-third-wave{
+    margin-top: -60vh;
+    opacity: .2;
+    z-index: 0;
+}
