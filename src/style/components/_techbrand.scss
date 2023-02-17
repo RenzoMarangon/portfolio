@@ -1,0 +1,45 @@
+.techbrand-container{
+    height: 40vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    z-index: 500;
+    position: absolute;
+    left: 10%;
+    top: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    h2{
+        font-size: 24px;
+        color: darken($color: $light-grey, $amount: 20);
+    }
+
+
+    .techbrand-container__list{
+        width: 100% !important;
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100% !important;
+
+            li{
+                height: 10vw;
+                opacity: .8;
+    
+                img{
+                    height: 10vh;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
