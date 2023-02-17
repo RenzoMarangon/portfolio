@@ -12,7 +12,7 @@ export const Menu = () => {
     <nav className='navbar__container'>
         <ul>
             <li className=''><a href='#' className='buttonx'>Inicio</a></li>
-            <li><a href='#' className='buttonx'>Proyectos</a></li>
+            <li><a href='#projects' className='buttonx'>Proyectos</a></li>
             <li><a href='#' className='buttonx'>Contacto</a></li>
 
             <li className=''>

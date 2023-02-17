@@ -1,78 +1,86 @@
-.block-wave-container{
-
-    height: 30vh;
-    background-color:$grey;
-    margin-top: -3vh;
-}
-
-@media screen and (max-width:1450px) {
-    .block-wave-container{
-
-        height: 40vh;
-        margin-top: -4rem;
-    }
-    
-    .wave-second-wave{
-        margin-top: -30vh !important;
-    }
-    .wave-third-wave{
-        margin-bottom: 5vh;
-    }
-    .wave-first-wave{
-        margin-bottom: -5vh !important;
-    }
-}
-
-
-@media screen and (max-width:1000px) {
-    .block-wave-container{
-
-        height: 40vh;
-        margin-top: -1.8rem !important;
-    }
-    
-
-}
-
-
-@media screen and (max-width:1200px) {
-    .block-wave-container{
-
-        height: 40vh;
-        margin-top: -4.5rem;
-    }
-    
-
-}
-
-
-
 
 .techband-container__waves{
-
-    height: 0;
-    width: 100%;
-    z-index: 10;
-    top: 30vh;
     position: absolute;
-    margin: 0;
-    z-index: 1;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    top:40vh;
+
 }
 
-.wave-second-wave{
-    margin-top: -30vh;
-    opacity: .5;
-    z-index: 20;
+
+.wave-topwaves__container{
+    position: relative;
+
+
+    .wave-second-wave{
+        opacity: .5;
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .wave-third-wave{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .2;
+    }
 }
 
-.wave-first-wave{
-    margin-top: 20vh;
-    margin-bottom: -15vh;
-    z-index: 10;
+.block-wave__container{
+    width: 100%;
+    height: 20vh;
+    background-color:$grey;
+    content: "";
+    margin-top: -1rem;
+}   
+
+.wave-botwaves__container{
+    position: relative;
+    width: 100%;
+    .wave-fourth-wave{
+        
+        position: absolute;
+        bottom: -40vh;
+        left: 0;
+        z-index: 20;
+
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+  
+    }
+
+    .wave-fifth-wave{
+        position: absolute;
+        bottom: -42vh;
+        left: 0;
+        opacity: .5;
+        z-index: 10;
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .wave-sixth-wave{
+        position: absolute;
+        bottom: -38vh;
+        left: 0;
+        opacity: .2;
+        z-index: 10;
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
 
-.wave-third-wave{
-    margin-top: -60vh;
-    opacity: .2;
-    z-index: 0;
-}
+

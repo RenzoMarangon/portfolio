@@ -13,8 +13,8 @@ export const PortfolioScreen = () => {
             <Menu />
             <Profile />
             <TechBrand />
-            <Waves />
             <ProjectsView />
+            <Waves />
             <Footer />
         </div>
     </div>

@@ -1,5 +1,9 @@
 
 
+.button-effect__p{
+  width: 70px !important;
+  margin-left: -1.4rem !important;
+}
 
   //Efecto re locochon
 
@@ -10,6 +14,7 @@
   }
   .btn-one span {
     transition: all 0.3s;
+    
   }
   .btn-one::before {
     content: '';
@@ -28,6 +33,7 @@
     border-top-color: rgba(255,255,255,0.5);
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
+    
   }
   .btn-one:hover span {
     letter-spacing: 2px;
@@ -66,6 +72,7 @@
   .followMSM {
     width: 14%;
     z-index: 1000;
+    
    }
   
   .followMSM span, .followMSM i {
@@ -83,6 +90,7 @@
     -ms-transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
     transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
+    
   }
       
   .followMSM span:hover, .followMSM i:hover {
@@ -98,6 +106,7 @@
     -ms-transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
     transition: background-color .25s ease-in-out, color .25s ease-in-out, transform .25s ease-in-out;
+  
   }
       
   .followMSM .dashicons-facebook-alt:hover {
@@ -126,17 +135,17 @@
   
   /* Text */
   
+  
   p {
-    font-size: 14px;
+    font-size: 12px !important;
     text-transform: uppercase;
-    font-family: Roboto, san-serif;
+    // font-family: Roboto, san-serif;
     text-align: center;
   }
   
   p a {
-    font-size: 14px;
     text-transform: uppercase;
-    font-family: Roboto, san-serif;
+    // font-family: Roboto, san-serif;
     font-weight: bold;
     color: var(--colorRed02);
   }
@@ -152,14 +161,13 @@
   }
 
   .button-effect__p{
-    font-size: 10px;
+    font-size: 16px;
     width: 50px;
     margin-left: -.8rem;
   }
 
 
   ///OTRO BUTTON EFFECT
-  
 
   .btnfos {
     color: #fff;
@@ -252,13 +260,13 @@
 
 .buttonx {
   --text: #fff;
-  --font-size: 16px;
+  --font-size: 24px;
   --duration: .44s;
   --move-hover: -4px;
   --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
   --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
   --font-shadow: var(--font-size);
-  font-family: 'Roboto';
+  // font-family: 'Roboto';
   font-weight: 500;
   line-height: var(--font-size);
   border-radius: .5rem;
@@ -327,7 +335,7 @@
     position: relative;
     border-radius:.5rem;
     border: none !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     font-weight: 600;
     padding: .5rem;
   }
@@ -344,7 +352,7 @@
 
 button span.shape {
   height: 30px;
-  width: 150px;
+  width: 180px;
   position: absolute;
   top: 0;
   left: -.5rem;
