@@ -1,0 +1,89 @@
+.techbrand-container{
+    height: 40vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    z-index: 500;
+    position: absolute;
+    left: 15%;
+    top: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;    
+    h2{
+        font-size: 24px;
+        color: darken($color: $light-grey, $amount: 20);
+    }
+
+    
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 70vw;
+        li{
+            height: 10vw;
+            opacity: .8;
+
+            img{
+                height: 10vh;
+                width: auto;
+            }
+        }
+        }
+
+    
+}
+
+@media screen and (max-width:950px) {
+    .techbrand-container{
+        position: relative;
+        flex-wrap: wrap;
+        z-index: 1000000;
+        width: 100%;
+        top: 20vh;
+        left: 0 !important;
+        height: 60vh;
+        align-items: center;
+        margin: auto;
+
+        ul{
+            flex-wrap: wrap;
+            height: 50vh;
+            justify-content: space-around !important;
+            width: 85vw;
+            padding: 0 !important;
+        }
+
+ 
+    }
+}
+
+
+@media screen  and (min-width:550px) and (max-width:950px) {
+    .techbrand-container{
+        margin-left: 0;
+
+        ul{
+            height: 50vh;
+
+            li{
+                margin-right: 8vw;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width:550px){
+    .techbrand-container{
+        top: 30vh;
+
+        li{
+            margin-right: 4vw;
+        }
+
+    }
+}
+
