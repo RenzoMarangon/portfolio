@@ -85,8 +85,17 @@
 
 
 
-@media screen  and (max-width:550px){
+@media screen  and (max-width:450px){
     .card-project__container{
         max-width: 90vw;
+    }
+}
+
+
+
+@media screen  and (min-width:450px) and (max-width:950px){
+    .card-project__container{
+        max-width: 80vw;
+        margin: auto;
     }
 }

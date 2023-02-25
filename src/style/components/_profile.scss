@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
     max-width: 1440px;
-    height: 50vh;
     align-content: center;
     justify-content: center;
     z-index: 1000;
@@ -107,7 +106,6 @@
     .profile__container{
         display: flex;
         flex-direction: column;
-        margin: 20vh auto 0 auto ;
         width: 100vw;
         .profile__container__img-media{
 
@@ -116,7 +114,7 @@
             margin: 7vh auto;
 
             .profile__img-media__name{
-                margin-bottom: 5vh;
+                margin-bottom: 4vh;
             }
         }
 
@@ -126,6 +124,7 @@
             align-items: center;
             justify-content: center;
             box-sizing: border-box;
+            margin-top: 4vh;
             h2{
                 font-size: 36px ;
             }

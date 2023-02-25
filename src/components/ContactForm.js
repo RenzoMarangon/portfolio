@@ -145,6 +145,7 @@ export const ContactForm = () => {
             <div className='social-media__background'></div>
           </div>
         </div>
+        
         <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>
             <div class="animate-text">
               <h2>Enviar correo electrónico</h2>

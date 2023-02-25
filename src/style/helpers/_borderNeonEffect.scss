@@ -95,16 +95,26 @@
   }
 
 
-@media screen  and (max-width:550px){
+@media screen  and (max-width:950px){
   .cardx{
     max-width: 90vw;
     
   }
 
   .cardx::before{
-    width: 89vw;
+    width: 100%;
+    height: calc(100% + 1%);
   }
 
   .card::after{
+  }
+}
+
+
+@media screen  and (max-width:385px){
+  .cardx::before{
+    width: 100%;
+    height: calc(100% + 12%);
+    margin-top: -1.25rem;
   }
 }
