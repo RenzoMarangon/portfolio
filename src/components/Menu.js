@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from 'react'
 import { ButtonCV } from './ButtonCV';
+import { ButtonHamburguer } from './ButtonHamburguer';
 
 export const Menu = () => {
 
@@ -10,6 +11,9 @@ export const Menu = () => {
 
   return (
     <nav className='navbar__container'>
+
+        <ButtonHamburguer />
+
         <ul>
             <li className=''><a href='#' className='buttonx'>inicio</a></li>
             <li><a href='#projects' className='buttonx'>Proyectos</a></li>
