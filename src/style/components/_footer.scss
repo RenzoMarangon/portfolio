@@ -5,9 +5,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 30vh;
     a{
         width: 40px;
-        margin-top: 8rem;
         img{
             width: 40px;
             border: solid .1rem #fff;
@@ -20,8 +20,3 @@
 }
 
 
-@media screen and (max-width:1150px){
-    .footer__container{
-        padding-top: 70vh !important;
-    }
-}

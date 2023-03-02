@@ -1,6 +1,8 @@
 import React, { useLayoutEffect } from 'react'
 import { ButtonCV } from './ButtonCV';
 import { ButtonHamburguer } from './ButtonHamburguer';
+import {  useDispatch, useSelector } from 'react-redux'
+import { hideMenu } from '../actions/nav';
 
 export const Menu = () => {
 
@@ -9,15 +11,23 @@ export const Menu = () => {
 
   }, [])
 
+  const { menu } = useSelector(state => state.menu)
+
+  const dispatch = useDispatch();
+
+  const hideMenux = () => {
+    dispatch( hideMenu() )
+  }
+
   return (
     <nav className='navbar__container'>
 
-        <ButtonHamburguer />
 
-        <ul>
-            <li className=''><a href='#' className='buttonx'>inicio</a></li>
-            <li><a href='#projects' className='buttonx'>Proyectos</a></li>
-            <li><a href='#contact' className='buttonx'>Contacto</a></li>
+        <ul className={`${menu && 'menu-showed'}`} >
+
+            <li className=''><a href='#' className='buttonx' onClick={ ()=>{ hideMenux() } }>inicio</a></li>
+            <li onClick={ ()=>{ hideMenux() } }><a href='#projects' className='buttonx'>Proyectos</a></li>
+            <li onClick={ ()=>{ hideMenux() } }><a href='#contact' className='buttonx'>Contacto</a></li>
 
             <li className=''>
               <a href='#' className='btncv'>
@@ -26,6 +36,7 @@ export const Menu = () => {
             </li>
         </ul>
 
+        <ButtonHamburguer  />
 
     </nav>
   )

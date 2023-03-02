@@ -1,3 +1,9 @@
+.projects-view-container{
+    .animate-text{
+        margin-bottom: 1rem;
+    }
+}
+
 .card-project__container{
     max-width: 22vw;
     height: auto;
@@ -9,10 +15,8 @@
     flex-direction: column;
     opacity: .8;
 
-
     .card-project__view{
-        width: 100%;
-        padding: .22rem;
+        width: 98%;
         border-radius:1rem 1rem 0 0;
         box-sizing: border-box;
         z-index: 1000;
@@ -21,9 +25,8 @@
     .card-project__demo{
         background-color: #00ADB5;
         font-size: 16px;
-        padding: .2rem .5rem;
         border: none;
-
+        
     }
 
 
@@ -81,7 +84,6 @@
         height: 100%;
     }
 }
-
 
 
 

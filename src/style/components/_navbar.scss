@@ -16,29 +16,47 @@
 
 @media screen and (max-width:1150px) {
     .navbar__container{
-        position: absolute;
-        z-index: 1000;
-        left: 0;
-        width: 95%;
         align-items: flex-start;
         justify-content: flex-end;
-        height: 100%;
-      
-        ul{
+        height: 0;
+        width: 100vw;
+        
+
+        .menu-showed{
+            position: absolute;
+            display: flex;
             justify-content: flex-start;
             flex-direction: column;
+            z-index: 10000;
+            width: 100vw;
+            height: 100vh;
+            -webkit-clip-path: circle(150% at 100% 0%);
+            clip-path: circle(150% at 100% 0%);
+            li{
+                display: block;
+            }
+        }
+
+
+        ul{
+            width: 100vw;
+            height: 0;
             position: absolute;
-            overflow: hidden !important;
-            z-index: 1000;
+            transition: all .5s ease-in-out;
+            -webkit-clip-path: circle(0% at 100% 0%);
+            clip-path: circle(0% at 100% 0%);
             background-color: black;
-            display: none;
+            z-index: 10000;
             li{
                 padding: 2rem;
+                display: none;
             }
             .box{
                 text-align: left;
             }
         }
     }
+
+
 }
 

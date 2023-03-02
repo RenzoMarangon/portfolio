@@ -7,18 +7,24 @@ import { Profile } from './Profile'
 import { ProjectsView } from './projects/ProjectsView'
 import { TechBrand } from './TechBrand'
 
+import { useSelector } from 'react-redux'
+
+
 export const PortfolioScreen = () => {
+
+  const { menu } = useSelector(state=>state.menu)
+
+  const props = `${'e'}`
+
   return (
-    <div >
-        <div className='screen__container'>
-            <Menu />
-            <Profile />
-            <TechBrand />
-            <ProjectsView />
-            <Waves />
-            <ContactForm />
-            <Footer />
-        </div>
+    <div className={`screen__container ${menu && 'show-menu'}`} >
+        <Menu />
+        <Profile />
+        <TechBrand />
+        <ProjectsView />
+        <Waves />
+        <ContactForm />
+        <Footer />
     </div>
   )
 }

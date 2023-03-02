@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { ButtonEffect } from './ButtonEffect';
+import React from 'react'
 
 export const ContactForm = () => {
 
@@ -17,7 +16,6 @@ export const ContactForm = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // const after =
     const inputs = [...e.target ]
 
     inputs.forEach( input  => {
@@ -118,83 +116,81 @@ export const ContactForm = () => {
   return (
     <div className='contact-form__container' id="contact">
         <div class="animate-text">
-          <h2>Enviar correo electrónico</h2>
+          <h2>Contacto</h2>
         </div>
 
-        <div className='contact-form__container__social-media'>
+        <div className='contact-form__container__form-links'>
+            <div className='contact-form__container__social-media'>
 
-          <div className='social-media__container' >
-            <div className='social-media___content githubb' onMouseMove={()=>{transition('githubb')}}  onMouseOut={()=>{intransition('githubb')}}>
-              <img src='./GitHub.png' />
-              <a href='#' >/RenzoMarangon</a>
+              <div className='social-media__container' onMouseMove={()=>{transition('githubb')}}  onMouseOut={()=>{intransition('githubb')}}>
+                <div className='social-media___content githubb' >
+                  <img src='./GitHub.png' />
+                  <a href='#' >/RenzoMarangon</a>
+                </div>
+              </div>
+
+              <div className='social-media__container' onMouseMove={()=>{transition('linkedinn')}}  onMouseOut={()=>{intransition('linkedinn')}}>
+                <div className='social-media___content linkedinn' >
+                  <img src='./linked-in.png' />
+                  <a href='#' >/RenzoMarangon</a>
+                </div>
+              </div>
+
+              <div className='social-media__container' onMouseMove={()=>{transitionEmail('emaill')}}  onMouseOut={()=>{intransitionEmail('emaill')}}>
+                <div className='social-media___content emaill' >
+                  <img src='./email.png' />
+                  <a href='mailto:renzomarangon@gmail.com'>Renzomarangon@gmail.com</a>
+                </div>
+              </div>
             </div>
-            <div className='social-media__background'></div>
+
+            <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>
+
+              <div className='contact-form__container__input'>
+                <input className='inputx' type={'text'} name={'name'} placeholder={'Nombre'}/>
+                <div className='after after-name'>
+                  <img src='./warning.png' />     
+                  <p>El nombre debe tener al menos 3 carácteres</p></div>
+              </div>
+
+              <div className='contact-form__container__input'>
+                <input type={'email'} name={'email'} placeholder={'Email'} />
+                <div className='after after-email'>
+                  <img src='./warning.png' /> 
+                  <p>El nombre debe tener al menos 3 carácteres</p>
+                </div>
+              </div>
+
+              <div className='contact-form__container__input'>
+                <input type={'text'} name={'asunto'} placeholder={'Asunto'} />
+                <div className='after after-asunto'>
+                  <img src='./warning.png' /> 
+                  <p>El nombre debe tener al menos 3 carácteres</p>
+                </div>
+              </div>
+
+              <div className='contact-form__container__input'>
+                <textarea type={'text'} name={'msg'} placeholder={'Mensaje'} />
+                <div className='after after-msg'>
+                  <img src='./warning.png' /> 
+                  <p>El nombre debe tener al menos 3 carácteres</p>
+                </div>
+              </div>
+
+              <div className='contact-form__container__input captcha'>
+                <input type={'text'} name={'captcha'} placeholder={'1111'} />
+                <div className='after after-captcha'>
+                  <img src='./warning.png' /> 
+                  <p>El nombre debe tener al menos 3 carácteres</p>
+                </div>
+              </div>
+              <div className='form__background'></div>
+                <button className='contact-form__container__send' type='submit' onMouseMove={ movePlane } onMouseOut={ returnPlane }>
+                  <img src='paper-plane.svg' /> 
+                  <p>Enviar</p>
+                </button>
+            </form>
           </div>
-
-          <div className='social-media__container' >
-            <div className='social-media___content linkedinn' onMouseMove={()=>{transition('linkedinn')}}  onMouseOut={()=>{intransition('linkedinn')}}>
-              <img src='./linked-in.png' />
-              <a href='#' >/RenzoMarangon</a>
-            </div>
-            <div className='social-media__background'></div>
-          </div>
-
-          <div className='social-media__container' >
-            <div className='social-media___content emaill' onMouseMove={()=>{transitionEmail('emaill')}}  onMouseOut={()=>{intransitionEmail('emaill')}}>
-              <img src='./email.png' />
-              <a href='mailto:renzomarangon@gmail.com'>Renzomarangon@gmail.com</a>
-
-            </div>
-            <div className='social-media__background'></div>
-          </div>
-        </div>
-        
-        <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>
-
-            <div className='contact-form__container__input'>
-              <input className='inputx' type={'text'} name={'name'} placeholder={'Nombre'}/>
-              <div className='after after-name'>
-                <img src='./warning.png' />     
-                <p>El nombre debe tener al menos 3 carácteres</p></div>
-            </div>
-
-            <div className='contact-form__container__input'>
-              <input type={'email'} name={'email'} placeholder={'Email'} />
-              <div className='after after-email'>
-                <img src='./warning.png' /> 
-                <p>El nombre debe tener al menos 3 carácteres</p>
-              </div>
-            </div>
-
-            <div className='contact-form__container__input'>
-              <input type={'text'} name={'asunto'} placeholder={'Asunto'} />
-              <div className='after after-asunto'>
-                <img src='./warning.png' /> 
-                <p>El nombre debe tener al menos 3 carácteres</p>
-              </div>
-            </div>
-
-            <div className='contact-form__container__input'>
-              <textarea type={'text'} name={'msg'} placeholder={'Mensaje'} />
-              <div className='after after-msg'>
-                <img src='./warning.png' /> 
-                <p>El nombre debe tener al menos 3 carácteres</p>
-              </div>
-            </div>
-
-            <div className='contact-form__container__input captcha'>
-              <input type={'text'} name={'captcha'} placeholder={'1111'} />
-              <div className='after after-captcha'>
-                <img src='./warning.png' /> 
-                <p>El nombre debe tener al menos 3 carácteres</p>
-              </div>
-            </div>
-            <div className='form__background'></div>
-              <button className='contact-form__container__send' type='submit' onMouseMove={ movePlane } onMouseOut={ returnPlane }>
-                <img src='paper-plane.svg' /> 
-                <p>Enviar</p>
-              </button>
-        </form>
 
     </div>
   )
