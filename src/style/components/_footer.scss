@@ -1,6 +1,5 @@
 .footer__container{
 
-    margin-bottom: 5vh;
     width: 100%;
     height: 100%;
     display: flex;
@@ -8,7 +7,7 @@
     justify-content: center;
     a{
         width: 40px;
-        
+        margin-top: 8rem;
         img{
             width: 40px;
             border: solid .1rem #fff;
@@ -21,7 +20,7 @@
 }
 
 
-@media screen and (max-width:950px){
+@media screen and (max-width:1150px){
     .footer__container{
         padding-top: 70vh !important;
     }

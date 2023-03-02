@@ -1,6 +1,6 @@
 .card-project__container{
-    max-width: 22vw ;
-    height: 52.5vh;
+    max-width: 22vw;
+    height: auto;
     z-index: 1000;
     border-radius: 1rem;
     display: flex;
@@ -93,7 +93,7 @@
 
 
 
-@media screen  and (min-width:450px) and (max-width:950px){
+@media screen  and (min-width:450px) and (max-width:1150px){
     .card-project__container{
         max-width: 80vw;
         margin: auto;

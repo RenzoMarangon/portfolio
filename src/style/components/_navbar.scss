@@ -14,15 +14,16 @@
     }
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1150px) {
     .navbar__container{
         position: absolute;
         z-index: 1000;
         left: 0;
-        top: 5vh;
         width: 95%;
         align-items: flex-start;
         justify-content: flex-end;
+        height: 100%;
+      
         ul{
             justify-content: flex-start;
             flex-direction: column;

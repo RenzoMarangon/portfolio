@@ -1,19 +1,19 @@
 
-.button-hamburguer__container{
-    display: none;
-}
 
-@media screen and (max-width:950px) {
+
+@media screen and (max-width:1000px) {
     .button-hamburguer__container{
-        box-sizing: border-box;
         display: flex;
+        box-sizing: border-box;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         position: relative;
-        height: 70px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
         row-gap: .5rem;
+        z-index: 1000;
+        background-color: transparent !important;
         .button-hamburguer__container__bar{
             content: "";
             width: 40px;

@@ -12,11 +12,11 @@
 // }
 
 .projects-view-container{
-    width: 95%;
+    max-width: 1350px;
     margin: auto;
     z-index: 100;
     position: relative;
-
+    top: 10rem;
 
     h2{
         font-size: 24px;
@@ -33,10 +33,9 @@
 }
 
 
-@media screen  and (max-width:450px){
+@media screen  and (max-width:1150px){
 
     .projects-view-container{
-
         margin-top: -27vh;
         .projects-view__projects{
             
@@ -53,17 +52,10 @@
 
 }
 
-@media screen  and (min-width:550px) and (max-width:950px){
+@media screen  and (min-width:550px) and (max-width:1150px){
     .projects-view-container{
-        .projects-view__projects{
+        margin-top: 5rem;
 
-            flex-direction: column;
-            row-gap:  10vh;
-        }
-
-        .animate-text{
-            margin-bottom: 5vh;
-        }
     }
 }
 

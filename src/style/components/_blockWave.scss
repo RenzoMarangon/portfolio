@@ -105,56 +105,137 @@
 }
 
 
-@media screen and (min-width:700px) and (max-width:950px) {
-    .techband-container__waves{
-        margin-top: 15vh;
-        width: 100vw;
-    }
-    
-    .wave-botwaves__container{
-        .wave-fourth-wave{
-            bottom: -28vh;
-        }
 
-        .wave-fifth-wave{
-            bottom: -28vh;
 
-        }
-
-        .wave-sixth-wave{
-            bottom: -28vh;
-
-        }
-    }
-}
-
-@media screen and (min-width:450px) and (max-width:950px) {
+@media screen and (min-width:500px) and (max-width:600px) {
     .techband-container__waves{
         margin-top: 10vh;
         width: 100vw;
     }
     
+    .block-wave__container{
+    }
     .wave-botwaves__container{
         .wave-fourth-wave{
-            bottom: -15vh;
+            bottom: -7.8rem;
         }
 
         .wave-fifth-wave{
-            bottom: -15vh;
+            bottom: -7.8rem;
 
         }
 
         .wave-sixth-wave{
-            bottom: -15vh;
+            bottom: -7.8rem;
 
         }
     }
 }
 
-@media screen and (max-width:450px) {
+
+
+@media screen and (min-width:600px) and (max-width:750px) {
     .techband-container__waves{
-        margin-top: 28vh;
-        width: 100vw;
+        margin-top: 5rem;
+    }
+    .wave-botwaves__container{
+   
+
+        .wave-fourth-wave{
+            bottom: -9rem;
+        }
+
+        .wave-fifth-wave{
+            bottom: -10rem;
+
+        }
+
+        .wave-sixth-wave{
+            bottom: -9rem;
+
+        }
+    }
+}
+
+
+@media screen and (min-width:750px) and (max-width:950px) {
+    .techband-container__waves{
+        margin-top: 5rem;
+    }
+    .wave-botwaves__container{
+   
+
+        .wave-fourth-wave{
+            bottom: -11.4rem;
+        }
+
+        .wave-fifth-wave{
+            bottom: -12rem;
+
+        }
+
+        .wave-sixth-wave{
+            bottom: -13rem;
+
+        }
+    }
+}
+
+@media screen and (min-width:1150px) and (max-width:1450px){
+
+    .techband-container__waves{
+        margin-top: 8rem;
+    }
+    .wave-botwaves__container{
+   
+
+        .wave-fourth-wave{
+            bottom: -17rem;
+        }
+
+        .wave-fifth-wave{
+            bottom: -18rem;
+
+        }
+
+        .wave-sixth-wave{
+            bottom: -19rem;
+
+        }
+    }
+}
+
+@media screen and (min-width:1450px) and (max-width:1600px){
+    .techband-container__waves{
+        margin-top: 4rem;
+    }
+    .wave-botwaves__container{
+   
+
+        .wave-fourth-wave{
+            bottom: -20rem;
+        }
+
+        .wave-fifth-wave{
+            bottom: -21rem;
+
+        }
+
+        .wave-sixth-wave{
+            bottom: -22rem;
+
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+ 
+    .block-wave__container{
+    }
+
+    .techband-container__waves{
+        margin-top: 10rem;
     }
     .wave-botwaves__container{
         .wave-fourth-wave{
@@ -168,6 +249,24 @@
 
         .wave-sixth-wave{
             bottom: -13vh;
+
+        }
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1150px) {
+    .wave-botwaves__container{
+        .wave-fourth-wave{
+            bottom: -14rem;
+        }
+
+        .wave-fifth-wave{
+            bottom: -15rem;
+
+        }
+
+        .wave-sixth-wave{
+            bottom: -16rem;
 
         }
     }

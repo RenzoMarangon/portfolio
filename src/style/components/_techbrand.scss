@@ -23,6 +23,7 @@
         display: flex;
         justify-content: space-around;
         width: 70vw;
+        column-gap: 5%;
         li{
             height: 10vw;
             opacity: .8;
@@ -37,7 +38,7 @@
     
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1150px) {
     .techbrand-container{
         position: relative;
         flex-wrap: wrap;
@@ -62,7 +63,7 @@
 }
 
 
-@media screen  and (min-width:550px) and (max-width:950px) {
+@media screen  and (min-width:550px) and (max-width:1150px) {
     .techbrand-container{
         margin-left: 0;
         top: 0vh;

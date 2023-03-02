@@ -117,6 +117,9 @@ export const ContactForm = () => {
 
   return (
     <div className='contact-form__container' id="contact">
+        <div class="animate-text">
+          <h2>Enviar correo electrónico</h2>
+        </div>
 
         <div className='contact-form__container__social-media'>
 
@@ -147,9 +150,7 @@ export const ContactForm = () => {
         </div>
         
         <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>
-            <div class="animate-text">
-              <h2>Enviar correo electrónico</h2>
-            </div>
+
             <div className='contact-form__container__input'>
               <input className='inputx' type={'text'} name={'name'} placeholder={'Nombre'}/>
               <div className='after after-name'>
@@ -195,7 +196,6 @@ export const ContactForm = () => {
               </button>
         </form>
 
-        <div className='contact-form__background'></div>
     </div>
   )
 }
