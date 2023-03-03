@@ -24,42 +24,65 @@ export const ContactForm = () => {
 
       if( value === "" ){
 
-        if( name === 'name' ){
-          showInputError('name');
-        }
-        if( name === 'email' ){
-          showInputError('email');
-        }
-        if( name === 'asunto' ){
-          showInputError('asunto');
-        }
-        if( name === 'msg' ){
-          showInputError('msg');
-        }
-        if( name === 'captcha' ){
-          showInputError('captcha');
+        switch(name){
+          case 'name':
+            showInputError('name');
+            break;
+          case 'email': 
+            showInputError('email');
+            break
+          case 'asunto': 
+            showInputError('asunto');
+            break
+          case 'msg': 
+            showInputError('msg');
+            break
+          case 'captcha': 
+            showInputError('captcha');
+            break
+          default:return;
+
         }
       }
+
+      // if( name === 'name' ){
+      //   showInputError('name');
+      // }
+      // if( name === 'email' ){
+      //   showInputError('email');
+      // }
+      // if( name === 'asunto' ){
+      //   showInputError('asunto');
+      // }
+      // if( name === 'msg' ){
+      //   showInputError('msg');
+      // }
+      // if( name === 'captcha' ){
+      //   showInputError('captcha');
+      // }
 
       if( value !== '' )
       {
         let after;
-        if( name === 'name' ){
-          after = document.querySelector('.after-name')
-        }
-        if( name === 'email' ){
-          after = document.querySelector('.after-email')
-        }
-        if( name === 'asunto' ){
-          after = document.querySelector('.after-asunto')
-        }
-        if( name === 'msg' ){
-          after = document.querySelector('.after-msg')
-        }
-        if( name === 'captcha' ){
-          after = document.querySelector('.after-captcha')
-        }
 
+        switch(name){
+          case 'name':
+            after = document.querySelector('.after-name');
+            break;
+          case 'email': 
+          after = document.querySelector('.after-email');
+            break
+          case 'asunto': 
+            after = document.querySelector('.after-asunto');
+            break
+          case 'msg': 
+            after = document.querySelector('.after-msg');
+            break
+          case 'captcha': 
+            after = document.querySelector('.after-captcha')
+            break
+          default:return;
+        }
 
         after.className = after.className.replace('after-show','')
       }
@@ -123,25 +146,31 @@ export const ContactForm = () => {
             <div className='contact-form__container__social-media'>
 
               <div className='social-media__container' onMouseMove={()=>{transition('githubb')}}  onMouseOut={()=>{intransition('githubb')}}>
-                <div className='social-media___content githubb' >
-                  <img src='./GitHub.png' />
-                  <a href='#' >/RenzoMarangon</a>
-                </div>
+                <a href='https://github.com/renzomarangon' target={'_BLANK'} >
+                  <div className='social-media___content githubb' >
+                    <img src='./GitHub.png' />
+                    <a>/RenzoMarangon</a>
+                  </div>
+                  </a>
               </div>
 
               <div className='social-media__container' onMouseMove={()=>{transition('linkedinn')}}  onMouseOut={()=>{intransition('linkedinn')}}>
+              <a href='https://www.linkedin.com/in/renzomarangon/' target={'_BLANK'} >
                 <div className='social-media___content linkedinn' >
                   <img src='./linked-in.png' />
-                  <a href='#' >/RenzoMarangon</a>
+                  <a>/RenzoMarangon</a>
                 </div>
+              </a>
               </div>
 
               <div className='social-media__container' onMouseMove={()=>{transitionEmail('emaill')}}  onMouseOut={()=>{intransitionEmail('emaill')}}>
-                <div className='social-media___content emaill' >
-                  <img src='./email.png' />
-                  <a href='mailto:renzomarangon@gmail.com'>Renzomarangon@gmail.com</a>
+                <a href='mailto:renzomarangon@outlook.com'>
+                  <div className='social-media___content emaill' >
+                    <img src='./email.png' />
+                    <a>Renzomarangon@outlook.com</a>
+                  </div>
+                  </a>
                 </div>
-              </div>
             </div>
 
             <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>

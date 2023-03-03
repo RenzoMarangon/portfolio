@@ -18,7 +18,7 @@ export const ButtonHamburguer = () => {
 
   return (
     <>
-    <div className='button-hamburguer__container'>
+    <div className='button-hamburguer__container' onClick={()=>{ showHideMenu() }}>
       
       <div className={`button-hamburguer__container__bar ${menu && 'barra_equis_izquierda'}`} onClick={()=>{ showHideMenu() }}  > </div>
       <div className={`button-hamburguer__container__bar ${menu && 'barra_equis_derecha'}`} onClick={()=>{ showHideMenu() }}    > </div>

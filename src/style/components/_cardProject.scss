@@ -5,7 +5,8 @@
 }
 
 .card-project__container{
-    max-width: 22vw;
+    min-width: 23.5rem !important;
+    max-width: 23.5rem !important;
     height: auto;
     z-index: 1000;
     border-radius: 1rem;
@@ -14,14 +15,28 @@
     justify-content: center;
     flex-direction: column;
     opacity: .8;
+    position: relative;
 
     .card-project__view{
         width: 98%;
+        min-height: 15rem;
+        max-height: 15rem;
         border-radius:1rem 1rem 0 0;
         box-sizing: border-box;
         z-index: 1000;
+        
     }
 
+    .projects-view-container__tech{
+        width: 98%;
+        background-color: #fff;
+        bottom: 30%;
+        z-index: 1000;
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
     .card-project__demo{
         background-color: #00ADB5;
         font-size: 16px;
@@ -35,16 +50,15 @@
         display: flex;
         flex-direction: column;
         align-items: left;
-        height: 25%;
+        height: 8rem;
+        padding-top: 1rem;
         width: 98%;
         word-break: break-all;
         word-wrap: break-word;
         background-color: white;
-        margin-top: -.3rem;
         z-index: 10;
-        
         box-sizing: border-box;
-
+        margin-top: -.1rem;
 
         h2{
             padding-top: .5rem;
@@ -65,7 +79,7 @@
         border-radius: 10rem;
         border: 2px solid #000;
         cursor: pointer;
-        margin-right: .2rem;
+        margin-right: .4rem;
     }
     .buttons_git{
         display: flex;
@@ -78,10 +92,12 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border-radius: 0 0 1rem 1rem;
         padding: .5rem;
         box-sizing: border-box;
         height: 100%;
+        margin-top: -.1rem;
+        padding-bottom: 1.5rem;
+        border-radius: 0 0 .8rem .8rem;
     }
 }
 
@@ -89,7 +105,8 @@
 
 @media screen  and (max-width:450px){
     .card-project__container{
-        max-width: 90vw;
+        min-width: 90% !important;
+        max-width: 90% !important;
     }
 }
 
@@ -97,7 +114,8 @@
 
 @media screen  and (min-width:450px) and (max-width:1150px){
     .card-project__container{
-        max-width: 80vw;
+        min-width: 90% !important;
+        max-width: 90% !important;
         margin: auto;
     }
 }

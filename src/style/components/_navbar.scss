@@ -32,6 +32,7 @@
             height: 100vh;
             -webkit-clip-path: circle(150% at 100% 0%);
             clip-path: circle(150% at 100% 0%);
+            z-index: 10000000;
             li{
                 display: block;
             }
@@ -40,7 +41,7 @@
 
         ul{
             width: 100vw;
-            height: 0;
+            height:100vh;
             position: absolute;
             transition: all .5s ease-in-out;
             -webkit-clip-path: circle(0% at 100% 0%);

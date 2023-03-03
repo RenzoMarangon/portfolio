@@ -8,7 +8,7 @@
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
-    top: 10rem;
+    top: 50vh;
 
     .animate-text{
         display: block;
@@ -25,7 +25,7 @@
     }
     form{
         width: 50%;
-        height: 90%;
+        height: 85vh;
         justify-self: flex-end;
         display: flex;
         flex-direction: column;
@@ -37,6 +37,7 @@
         -webkit-box-shadow: 3px 6px 21px -7px rgba(0,0,0,0.75);
         -moz-box-shadow: 3px 6px 21px -7px rgba(0,0,0,0.75);
         box-shadow: 3px 6px 21px -7px rgba(0,0,0,0.75);
+        padding: 1rem;
         .animate-text{
             color:white;
             z-index: 10;
@@ -108,7 +109,7 @@
 
 .contact-form__container__social-media{
     width: 50%;
-    height: 90%;
+    height: 85vh;
 
     display: flex;
     flex-direction: column;
@@ -252,7 +253,10 @@
 
         .contact-form__container__form{
             width: 100%;
-
+            row-gap: .8rem;
+            height: 95vh;
+            justify-content: space-around;
+         
         }
 
         form{

@@ -85,25 +85,31 @@ export const Profile = () => {
           <div className='profile__img-media__social-media'>
               <ul>
                   <li>
+                    <a href='https://www.linkedin.com/in/renzomarangon/' target={'_BLANK'}>
                       <ButtonEffect 
-                        icon={'linked-in.png'} 
-                        iconAlt={'fa-linkedin'}
-                        alt={'Linked-In'}
-                      />
+                          icon={'linked-in.png'} 
+                          iconAlt={'fa-linkedin'}
+                          alt={'Linked-In'}
+                        />
+                    </a>
                   </li>
                   <li>
+                    <a href='https://github.com/renzomarangon/' target={'_BLANK'}>
                     <ButtonEffect 
                           icon={'GitHub.png'} 
                           iconAlt={'dashicons-googleplus'}
                           alt={'GitHub'}
                         />
+                    </a>
                   </li>
                   <li>
-                    <ButtonEffect 
-                            icon={'email.png'} 
-                            iconAlt={'fa-pinterest-p'}
-                            alt={'Email'}
-                          />
+                    <a href='mailto:renzomarangon@outlook.com' target={'_BLANK'}>
+                      <ButtonEffect 
+                              icon={'email.png'} 
+                              iconAlt={'fa-pinterest-p'}
+                              alt={'Email'}
+                            />
+                      </a>
                   </li>
               </ul>
           </div>
@@ -113,8 +119,7 @@ export const Profile = () => {
       <div className='profile__container__about-me'> 
         <h2>Sobre mí</h2>
         <p>
-          Lorem ipsum porrum dolorum equis deum. Lorem ipsum porrum dolorum equis deumLorem ipsum porrum dolorum equis deumLorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum Lorem ipsum porrum dolorum equis deum
-        </p>
+        Profesor superior en Informática recibido en CONSUDEC, con experiencia desarrollando en Javascript, React con Redux y Next.js y Node con Express.js y MongoDB. Estudiante de Informática en UTN. </p>
       </div>
       
     </div>

@@ -272,3 +272,44 @@
     }
 }
 
+
+
+@media screen and (min-width:1600px) {
+    .techband-container__waves{
+        .wave-botwaves__container{
+            .wave-fourth-wave{
+                bottom: -30vh;
+            }
+    
+            .wave-fifth-wave{
+                bottom: -47vh;
+    
+            }
+    
+            .wave-sixth-wave{
+                bottom: -48vh;
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1850px) {
+    .techband-container__waves{
+        .wave-botwaves__container{
+            .wave-fourth-wave{
+                bottom: -43.5vh;
+            }
+    
+            .wave-fifth-wave{
+                bottom: -45vh;
+    
+            }
+    
+            .wave-sixth-wave{
+                bottom: -46vh;
+    
+            }
+        }
+    }
+}
