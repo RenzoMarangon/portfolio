@@ -19,7 +19,11 @@
 
 @media screen and (max-width:1150px) {
     .footer__container{
-        margin-top: 170vh;
+        margin-top: 70vh;
+
+        a{
+            display: none;
+        }
     }
 }
 

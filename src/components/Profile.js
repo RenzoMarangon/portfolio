@@ -70,19 +70,19 @@ export const Profile = () => {
     <div className='profile__container '>
       <div className='profile__container__img-media '>
         <div>
-            <div className='img-media__image' id='effect3D' onMouseMove={ effect3D } onMouseOut = { resetEffect3D} >
+            <div className='img-media__image animate__animated animate__fadeInUp' id='effect3D' onMouseMove={ effect3D } onMouseOut = { resetEffect3D} >
   
               {/* <img className='profile__img-media__profile-img' width="180" src='profile.jpg'/> */}
             </div>
 
-          <div className='profile__img-media__name '>
+          <div className='profile__img-media__name animate__animated animate__fadeInUp'>
             <h2>Renzo Marangon</h2>
             <p>Fullstack developer</p>
             <i class="fa-brands fa-github "></i>
           </div>
         </div>
 
-          <div className='profile__img-media__social-media'>
+          <div className='profile__img-media__social-media animate__animated animate__fadeInUp'>
               <ul>
                   <li>
                     <a href='https://www.linkedin.com/in/renzomarangon/' target={'_BLANK'}>
@@ -116,7 +116,7 @@ export const Profile = () => {
       </div>
 
 
-      <div className='profile__container__about-me'> 
+      <div className='profile__container__about-me animate__animated animate__fadeInUp'> 
         <h2>Sobre mí</h2>
         <p>
         Profesor superior en Informática recibido en CONSUDEC, con experiencia desarrollando en Javascript, React, Redux, Node, Express.js y Next.js.<br /> Estudiante de Informática en UTN. </p>

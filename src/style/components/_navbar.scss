@@ -20,8 +20,8 @@
         justify-content: flex-end;
         height: 0;
         width: 100vw;
-        
-
+        z-index: 10000000;
+        position: absolute;
         .menu-showed{
             position: absolute;
             display: flex;

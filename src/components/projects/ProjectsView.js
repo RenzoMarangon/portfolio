@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ProjectsCard } from './ProjectsCard'
 import { proyects } from '../../helpers/proyects'
+import { wowx } from '../../helpers/wowjs'
 
 export const ProjectsView = () => {
+
+  useEffect(()=>{
+    wowx.init()
+  },[])
+
   return (
 
     <div className='projects-view-container' id='projects'>
 
-      <div class="animate-text">
+      <div class="animate-text animate__animated animate__fadeInDown wow">
         <h2>Proyectos</h2>
       </div>
       

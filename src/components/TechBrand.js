@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CardTech } from './cards/CardTech'
+import { wowx } from '../helpers/wowjs'
 
 export const TechBrand = () => {
+
+  useEffect(()=>{
+    wowx.init();
+  },[])
+
+  const widthW = window.screen.width;
+
   return (
-    <div className='techbrand-container'>
-      <div class="animate-text">
+    <div className='techbrand-container '>
+      <div class={`animate-text ${widthW <= 500 && 'wow'} animate__animated animate__fadeInDown `}>
         <h2>Mi skill set</h2>
       </div>
 
 
-      <div className='techbrand-container__list'>
+      <div className='techbrand-container__list '>
         <ul>
               <li> <CardTech name={'Javascript'} img={'./javascript.png'} /></li>
               <li> <CardTech name={'React'}      img={'./react.png'} /></li>

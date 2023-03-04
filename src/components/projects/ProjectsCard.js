@@ -1,11 +1,15 @@
-import React from 'react'
-import { ButtonCV } from '../ButtonCV';
-
+import React, { useEffect } from 'react'
+import { wowx } from '../../helpers/wowjs';
 
 export const ProjectsCard = ({...data}) => {
     const { name, img, description, tech, url, gitUrl } = data;
+
+    useEffect(()=>{
+      wowx.init()
+    },[])
+
     return (
-      <div className='card-project__container cardx'>
+      <div className='card-project__container wow cardx animate__animated animate__rubberBand  '>
         {console.log(gitUrl)}
         <img className='card-project__view' src={`./${img}`} />
         <div className='projects-view-container__tech'>

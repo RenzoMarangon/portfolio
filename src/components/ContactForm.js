@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { wowx } from '../helpers/wowjs'
 
 export const ContactForm = () => {
+
+
+  //ANIMATE.CSS + WOWJS
+  useEffect(()=>{
+    wowx.init()
+  },[])
 
 
   const showInputError = ( name ) => {
@@ -9,9 +16,6 @@ export const ContactForm = () => {
 
     !className.includes('after-show') && (after.className = after.className +' ' + 'after-show');
   }
-
-
-
 
 
   const handleFormSubmit = (e) => {
@@ -137,7 +141,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <div className='contact-form__container' id="contact">
+    <div className='contact-form__container animate__animated animate__backInUp wow' id="contact">
         <div class="animate-text">
           <h2>Contacto</h2>
         </div>
@@ -145,7 +149,7 @@ export const ContactForm = () => {
         <div className='contact-form__container__form-links'>
             <div className='contact-form__container__social-media'>
 
-              <div className='social-media__container' onMouseMove={()=>{transition('githubb')}}  onMouseOut={()=>{intransition('githubb')}}>
+              <div className='social-media__container animate__animated animate__fadeInDown wow' onMouseMove={()=>{transition('githubb')}}  onMouseOut={()=>{intransition('githubb')}}>
                 <a href='https://github.com/renzomarangon' target={'_BLANK'} >
                   <div className='social-media___content githubb' >
                     <img src='./GitHub.png' />
@@ -154,7 +158,7 @@ export const ContactForm = () => {
                   </a>
               </div>
 
-              <div className='social-media__container' onMouseMove={()=>{transition('linkedinn')}}  onMouseOut={()=>{intransition('linkedinn')}}>
+              <div className='social-media__container animate__animated animate__fadeInDown wow' onMouseMove={()=>{transition('linkedinn')}}  onMouseOut={()=>{intransition('linkedinn')}}>
               <a href='https://www.linkedin.com/in/renzomarangon/' target={'_BLANK'} >
                 <div className='social-media___content linkedinn' >
                   <img src='./linked-in.png' />
@@ -163,7 +167,7 @@ export const ContactForm = () => {
               </a>
               </div>
 
-              <div className='social-media__container' onMouseMove={()=>{transitionEmail('emaill')}}  onMouseOut={()=>{intransitionEmail('emaill')}}>
+              <div className='social-media__container animate__animated animate__fadeInDown wow' onMouseMove={()=>{transitionEmail('emaill')}}  onMouseOut={()=>{intransitionEmail('emaill')}}>
                 <a href='mailto:renzomarangon@outlook.com'>
                   <div className='social-media___content emaill' >
                     <img src='./email.png' />
@@ -175,14 +179,14 @@ export const ContactForm = () => {
 
             <form onSubmit={ handleFormSubmit } className='contact-form__container__form'>
 
-              <div className='contact-form__container__input'>
+              <div className='contact-form__container__input animate__animated animate__fadeInDown wow'>
                 <input className='inputx' type={'text'} name={'name'} placeholder={'Nombre'}/>
                 <div className='after after-name'>
                   <img src='./warning.png' />     
                   <p>El nombre debe tener al menos 3 carácteres</p></div>
               </div>
 
-              <div className='contact-form__container__input'>
+              <div className='contact-form__container__input animate__animated animate__fadeInDown wow'>
                 <input type={'email'} name={'email'} placeholder={'Email'} />
                 <div className='after after-email'>
                   <img src='./warning.png' /> 
@@ -190,7 +194,7 @@ export const ContactForm = () => {
                 </div>
               </div>
 
-              <div className='contact-form__container__input'>
+              <div className='contact-form__container__input animate__animated animate__fadeInDown wow'>
                 <input type={'text'} name={'asunto'} placeholder={'Asunto'} />
                 <div className='after after-asunto'>
                   <img src='./warning.png' /> 
@@ -198,7 +202,7 @@ export const ContactForm = () => {
                 </div>
               </div>
 
-              <div className='contact-form__container__input'>
+              <div className='contact-form__container__input animate__animated animate__fadeInDown wow'>
                 <textarea type={'text'} name={'msg'} placeholder={'Mensaje'} />
                 <div className='after after-msg'>
                   <img src='./warning.png' /> 
@@ -206,7 +210,7 @@ export const ContactForm = () => {
                 </div>
               </div>
 
-              <div className='contact-form__container__input captcha'>
+              <div className='contact-form__container__input captcha animate__animated animate__fadeInDown wow'>
                 <input type={'text'} name={'captcha'} placeholder={'1111'} />
                 <div className='after after-captcha'>
                   <img src='./warning.png' /> 
@@ -214,7 +218,7 @@ export const ContactForm = () => {
                 </div>
               </div>
               <div className='form__background'></div>
-                <button className='contact-form__container__send' type='submit' onMouseMove={ movePlane } onMouseOut={ returnPlane }>
+                <button className='contact-form__container__send animate__animated animate__fadeInDown wow' type='submit' onMouseMove={ movePlane } onMouseOut={ returnPlane }>
                   <img src='paper-plane.svg' /> 
                   <p>Enviar</p>
                 </button>

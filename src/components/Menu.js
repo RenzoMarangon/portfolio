@@ -6,6 +6,7 @@ import { hideMenu } from '../actions/nav';
 
 export const Menu = () => {
 
+  
   useLayoutEffect(() => {
     document.querySelectorAll('.buttonx').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
 
@@ -29,10 +30,10 @@ export const Menu = () => {
   };
 
   return (
-    <nav className='navbar__container'>
+    <nav className='navbar__container animate__animated animate__bounce'>
 
 
-        <ul className={`${menu && 'menu-showed'}`} >
+        <ul className={`${menu && 'menu-showed'} animate__animated animate__flipInX`} >
 
             <li className=''><a href='#' className='buttonx' onClick={ ()=>{ hideMenux() } }>inicio</a></li>
             <li onClick={ ()=>{ hideMenux() } }><a href='#projects' className='buttonx'>Proyectos</a></li>
