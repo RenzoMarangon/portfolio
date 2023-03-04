@@ -10,6 +10,7 @@ export const ProjectsView = () => {
       <div class="animate-text">
         <h2>Proyectos</h2>
       </div>
+      
       <div className='projects-view__projects'>
 
         {proyects.map( ({title,description,url,tech,img, gitUrl}) =>

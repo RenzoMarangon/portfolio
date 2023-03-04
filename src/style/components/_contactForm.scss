@@ -8,8 +8,7 @@
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
-    top: 50vh;
-
+    top: 20rem;
     .animate-text{
         display: block;
         margin-top: 10vh;
@@ -298,14 +297,13 @@
     
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:450px){
     .contact-form__container{
+        padding: .5rem;
         .contact-form__background{
             top: 93vh !important;
         }
-        .form__background{
-            height: 83vh;
-        }
+       
     }
 
 }
