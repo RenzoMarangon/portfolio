@@ -119,7 +119,7 @@ export const Profile = () => {
       <div className='profile__container__about-me'> 
         <h2>Sobre mí</h2>
         <p>
-        Profesor superior en Informática recibido en CONSUDEC, con experiencia desarrollando en Javascript, React con Redux y Next.js y Node con Express.js y MongoDB. Estudiante de Informática en UTN. </p>
+        Profesor superior en Informática recibido en CONSUDEC, con experiencia desarrollando en Javascript, React, Redux, Node, Express.js y Next.js.<br /> Estudiante de Informática en UTN. </p>
       </div>
       
     </div>

@@ -570,6 +570,7 @@ button.active span span:nth-of-type(8) {
   background: transparent;
   position: relative;
   z-index: 10000;
+
   &:focus{
     outline: none;
   }
@@ -592,8 +593,8 @@ button.active span span:nth-of-type(8) {
         background: #000;
         transition: all .5s;
         transform: scaleY(0);
-        
         z-index: -1;
+
       }
   
       &:hover::before{
@@ -605,7 +606,7 @@ button.active span span:nth-of-type(8) {
     &--5{
      
       &:hover{
-        color: #fff;
+        color: #fff !important;
       }
       
       &::before{
@@ -621,11 +622,13 @@ button.active span span:nth-of-type(8) {
         transform: scaleY(0);
         transform-origin: center;
        transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+       
       }
       
       &:hover::before{
         transform: scaleY(1);
         width: 100%;
+        
       }
       
     }

@@ -17,12 +17,12 @@ export const proyects = [
         gitUrl:'https://github.com/RenzoMarangon/naval-electric',
     },   
     {
-        title: 'Aymi Lova',
-        description:'Sitio web personal para exposicion de fotos hecho con javascript vanilla, html y css.',
-        url:'https://www.aymilova.com.ar/',
-        tech:['Javascript','Sass','Css','HTML'],
-        img:'aymiLova.png',
-        gitUrl:'https://github.com/RenzoMarangon/AymiLova',
+        title: 'Cryptojuegos',
+        description:'Sitio web con temática crypto, realizado como proyecto final para el curso de desarrollo web en Coderhouse',
+        url:'https://cryptojuegos.netlify.app/index.html',
+        tech:['Sass','Css','HTML'],
+        img:'cryptojuegos.png',
+        gitUrl:'https://github.com/RenzoMarangon/proyectoFinalCoderHouse',
     },
 
 ]
