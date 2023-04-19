@@ -8,8 +8,8 @@
     top: 75vh;
     width: 75%;
     left: 35%; 
-    top: 140%;
-    transform: translate(-35%, -140%);
+    top: 145%;
+    transform: translate(-35%, -145%);
     h2{
         font-size: 24px;
         color: darken($color: $light-grey, $amount: 20);
@@ -51,8 +51,8 @@
 
 
         left: 0%; 
-        top: 50%;
-        transform: translate(0%, -50%);
+        top: 60%;
+        transform: translate(0%, -60%);
 
         ul{
             display: grid;
@@ -91,7 +91,7 @@
     .techbrand-container{
 
         left: 0%; 
-        top: 50%;
+        top: 60%;
         transform: translate(0%, -50%);
         li{
             margin-right: 4vw;
